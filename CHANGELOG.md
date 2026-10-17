@@ -2,6 +2,12 @@
 
 What changed in each A1ERP POS version. Newest first.
 
+## 1.11.26 — 2026-10-17
+
+- **Checkbox selection for printer routing.** Select Items and Item Groups by
+  checking their boxes, without holding Ctrl/Cmd. Each selection can be removed
+  independently; saved selections and printing rules are unchanged.
+
 ## 1.11.25 — 2026-10-17
 
 - **Printer item routing.** Each printer can include multiple Items and Item
