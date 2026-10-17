@@ -2,6 +2,18 @@
 
 What changed in each A1ERP POS version. Newest first.
 
+## 1.11.25 — 2026-10-17
+
+- **Printer item routing.** Each printer can include multiple Items and Item
+  Groups. An item prints when either its code or its group matches. With no
+  selections, the printer prints all items.
+- **No empty tickets.** Printers with no matching items receive no print job,
+  including automatic printing and receipt reprints.
+- **Existing settings stay compatible.** Saved kitchen exclusions keep working
+  until you explicitly change that printer's item routing.
+- **Startup fix.** Fixed an updater-loading error that could prevent the
+  packaged app window from opening.
+
 ## 1.11.24 — 2026-10-10
 
 - **Automatic updates.** On startup the app checks for a new version and offers
