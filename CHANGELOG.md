@@ -2,6 +2,14 @@
 
 What changed in each A1ERP POS version. Newest first.
 
+## 1.11.27 — 2026-10-20
+
+- **Search printer routing lists.** Find Items and Item Groups using the search
+  box. Existing selections stay selected when hidden by the search.
+- **Check for updates from Settings.** Settings → System now shows the current
+  app version and a **Check for update** button, with download progress and
+  update status.
+
 ## 1.11.26 — 2026-10-17
 
 - **Checkbox selection for printer routing.** Select Items and Item Groups by
