@@ -2,6 +2,19 @@
 
 What changed in each A1ERP POS version. Newest first.
 
+## 1.11.28 — 2026-11-07
+
+- **Two restaurants in one POS Profile.** A tab per restaurant on the sale screen; each line uses its restaurant's warehouse, cost center and price list, and the closing is split by restaurant.
+- **Prices tab.** Edit selling prices from the app, with a maximum change percent and a change history.
+- **Expenses tab.** Cash expenses with a receipt photo; amounts above the limit wait for approval in the app; approved cash expenses are deducted from the closing cash.
+- **Purchases and Stock Count tabs.** Buy from an outside supplier into the branch warehouse; count stock and reconcile only the changed items.
+- **Material Requests tab.** Request materials from the main kitchen and follow their status.
+- **Reports tab.** Sales, closings, item movement, purchases, expenses, stock movement and stock balance, with today's summary, print and export.
+- **App version on opening and closing.** Each shift records the app version that opened and closed it.
+- **Restart fix.** The app closes fully and reopens without Task Manager; after a restart without "Remember me" it asks you to sign in again instead of reporting "offline".
+- **Closing with stock shortages.** After the missing stock is added, Sync Now and the new **Retry failed invoices** button resend the invoices so the shift can close.
+- **Fixes.** Cashier roles now load, so the new tabs appear for non-admin users; the camera works on Windows for receipt photos and the barcode scanner; the new pages match the app's design; messages say A1ERP.
+
 ## 1.11.27 — 2026-10-20
 
 - **Search printer routing lists.** Find Items and Item Groups using the search
