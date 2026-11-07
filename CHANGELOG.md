@@ -2,6 +2,15 @@
 
 What changed in each A1ERP POS version. Newest first.
 
+## 1.11.29 — 2026-11-07
+
+- **Purchases create Purchase Invoices.** A purchase from the app now creates a standard Purchase Invoice with Update Stock, one per supplier. A paid purchase is a cash purchase from the shift and is deducted from the expected cash at closing, like expenses; unpaid purchases stay owed to the supplier.
+- **Stock Count creates a Stock Reconciliation directly.** Only items whose count differs from the system go in, at the count's date and time.
+- **Add stock at closing.** On Qty Sync Failures each item has an **Add stock** button. It opens Purchases with the item, missing quantity and warehouse filled in (or Stock Count when the item can't be purchased). Once it syncs, the failed invoices are retried automatically.
+- **Closing summary** shows cash purchases next to cash expenses.
+- Closing no longer requires a Purchase Direct Entry; `purchase_direct` is no longer needed by the app.
+- Needs the matching `pos_offline` server update.
+
 ## 1.11.28 — 2026-11-07
 
 - **Two restaurants in one POS Profile.** A tab per restaurant on the sale screen; each line uses its restaurant's warehouse, cost center and price list, and the closing is split by restaurant.
