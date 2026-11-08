@@ -2,6 +2,12 @@
 
 What changed in each A1ERP POS version. Newest first.
 
+## 1.11.30 — 2026-11-08
+
+- **Check for update in Settings.** The update button is now on the Settings page (Store tab), with the current version and download progress.
+- **Simpler first-time setup.** The setup wizard no longer asks for an API Key and Secret, and no longer runs a separate initial sync. Enter the server address, test that it responds, then sign in with your A1ERP username and password; the data downloads after sign-in.
+- **Arabic.** Screens that still showed English in Arabic mode are now translated: Settings, Reports, Products, POS Profile, Item Display Names, setup wizard, login, sale screen, closing and customer screens. Dates still show English month names.
+
 ## 1.11.29 — 2026-11-07
 
 - **Purchases create Purchase Invoices.** A purchase from the app now creates a standard Purchase Invoice with Update Stock, one per supplier. A paid purchase is a cash purchase from the shift and is deducted from the expected cash at closing, like expenses; unpaid purchases stay owed to the supplier.
