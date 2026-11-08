@@ -2,6 +2,10 @@
 
 What changed in each A1ERP POS version. Newest first.
 
+## 1.11.31 — 2026-11-08
+
+- **Setup wizard connection test fixed.** On a new install, Test Connection always said "Connection failed: server not reachable", even when the server worked in the browser. It now checks the server correctly.
+
 ## 1.11.30 — 2026-11-08
 
 - **Check for update in Settings.** The update button is now on the Settings page (Store tab), with the current version and download progress.
