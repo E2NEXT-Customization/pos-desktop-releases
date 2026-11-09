@@ -2,6 +2,13 @@
 
 What changed in each A1ERP POS version. Newest first.
 
+## 1.11.32 — 2026-11-09
+
+- **Faster first start.** On a new install the app no longer downloads the data again and again while it starts, and no longer fetches each POS Profile separately. Against the test server, Sign In to the opening screen went from almost 10 minutes to under a minute.
+- **Settings shows the installed version** next to Check for update (it showed "-").
+- **More reliable update check.** The check reads the latest version in one request, so a GitHub timeout is less likely to stop it. Errors are now one short line instead of a long technical message. Takes effect from the next update after 1.11.32.
+- With the matching `pos_offline` server update, each till downloads only the POS Profiles its user may use.
+
 ## 1.11.31 — 2026-11-08
 
 - **Setup wizard connection test fixed.** On a new install, Test Connection always said "Connection failed: server not reachable", even when the server worked in the browser. It now checks the server correctly.
