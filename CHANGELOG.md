@@ -2,6 +2,10 @@
 
 What changed in each A1ERP POS version. Newest first.
 
+## 1.11.35 — 2026-11-18
+
+- **Till logs are kept and sent to your server.** The app now writes its log to `%APPDATA%\pos-desktop\logs\` (14 days) and every 2 minutes sends new lines to the till's own server, without needing a working sign-in, so a disabled user or a wrong saved password can still be diagnosed remotely. Passwords, cookies and tokens are removed before anything is written. The server needs the matching `pos_offline` update; until then lines wait on the PC and are sent later.
+
 ## 1.11.34 — 2026-11-18
 
 - **Sync button works after a restart.** When the app reopened a saved session, pressing Sync could show "Sync processor not available" while the header said connected, so invoices stayed unsent. Sync now reconnects with the saved password. If no password was saved ("Remember me" off), the app says "Sign in again" and returns to the login screen.
