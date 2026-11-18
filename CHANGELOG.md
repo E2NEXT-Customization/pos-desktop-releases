@@ -2,6 +2,10 @@
 
 What changed in each A1ERP POS version. Newest first.
 
+## 1.11.34 — 2026-11-18
+
+- **Sync button works after a restart.** When the app reopened a saved session, pressing Sync could show "Sync processor not available" while the header said connected, so invoices stayed unsent. Sync now reconnects with the saved password. If no password was saved ("Remember me" off), the app says "Sign in again" and returns to the login screen.
+
 ## 1.11.33 — 2026-11-17
 
 - **Sync resumes after an offline sign-in.** If the till signed in while the server was unreachable, invoices stayed unsent until an hourly check, which could block closing the shift. The app now retries every minute and sends the queued invoices as soon as the server is back. If the server rejects the saved password, it stops retrying so the account is not locked.
